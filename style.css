@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+label {
+    margin-right: 20px;
+}
+
+th, 
+td{
+    padding: 10px;
+}
+
+button{
+    margin: 2px;
+}

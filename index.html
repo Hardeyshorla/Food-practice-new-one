@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Preferences - Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Food Preferences - Survey Form</h1>
+    <h5>Please fill out and submit the survey form at the earliest</h5>
+    <hr>
+    <form action="/" method="post">
+        <table>
+            <tr>
+                <td>1. Name</td>
+                <td><input type="text" name="user"></td>
+            </tr>
+            <tr>
+                <td>2. Age</td>
+                <td><input type="number" min="15" max="100" name="user"></td>
+            </tr>
+            <tr>
+                <td>3. Where do you eat most often?</td>
+                <td>
+                    <input type="radio" name="location" id="home">
+                    <label for="home"> At home </label>
+                    
+                    <input type="radio" name="location" id="work_or_school">
+                    <label for="work_or_school">At work / school</label>
+                
+                    <input type="radio" name="location" id="restaurant">
+                    <label for="restaurant">in a restaurant</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">4. Specify, how often?</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table style="border: 1px solid">
+                        <thead>
+                            <th></th>
+                            <th>every day</th>
+                            <th>a few times a week</th>
+                            <th>once a week</th>
+                            <th>several times a month</th>
+                            <th>once a month</th>
+                            <th>less often than a month</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>You prepare your own meals?</td>
+                                <td style="text-align: center;"><input type="radio" name="you_prepare" id="every day"></td>
+                                <td style="text-align: center;"><input type="radio" name="you_prepare" id="a few times a week"></td>
+                                <td style="text-align: center;"><input type="radio" name="you_prepare" id="once a week"></td>
+                                <td style="text-align: center;"><input type="radio" name="you_prepare" id="several times a month"></td>
+                                <td style="text-align: center;"><input type="radio" name="you_prepare" id="once a month"></td>
+                                <td style="text-align: center;"><input type="radio" name="you_prepare" id="less often than a month"></td>
+                            </tr>
+                            <tr>
+                                <td>You eat out</td>
+                                <td style="text-align: center;"><input type="radio" name="You_eat_out" id="every day"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_eat_out" id="a few times a week"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_eat_out" id="once a week"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_eat_out" id="several times a month"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_eat_out" id="once a month"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_eat_out" id="less often than a month"></td>
+                            </tr>
+                            <tr>
+                                <td>You order for home</td>
+                                <td style="text-align: center;"><input type="radio" name="You_order_for_home" id="every day"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_order_for_home" id="a few times a week"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_order_for_home" id="once a week"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_order_for_home" id="several times a month"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_order_for_home" id="once a month"></td>
+                                <td style="text-align: center;"><input type="radio" name="You_order_for_home" id="less often than a month"></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">5. The most common places you visit are restaurant serving food of origin:</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="polish" id="food_origin_preferences" value="polish">
+                                <label for="polish">Polish</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="indain" id="food_origin_preferences" value="indian">
+                                <label for="indain">Indian</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="italian" id="food_origin_preferences" value="italian">
+                                <label for="italian">italian</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="spanish" id="food_origin_preferences" value="spanish">
+                                <label for="spanish">Spanish</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="asian" id="food_origin_preferences" value="asian">
+                                <label for="asian">Asian</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chinese" id="food_origin_preferences" value="chinese">
+                                <label for="chinese">Chinese</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="american" id="food_origin_preferences" value="american">
+                                <label for="american">American</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="others" id="food_origin_preferences" value="othersS">
+                                 <label for="others">Others</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6. Given an option, would you go vegan?</td>
+                            <td>
+                                <label for="sure">Sure</label>
+                                <input type="radio" name="vegan" id="sure">
+                                <label for="no">No</label>
+                                <input type="radio" name="vegan" id="no">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <button>Submit</button> <button>Reset</button>
+                  
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
